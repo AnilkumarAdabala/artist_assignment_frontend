@@ -1,0 +1,57 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #72cee5;
+  color: white;
+  border-radius: 8px;
+}
+
+.add-btn{
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+
+}
+.App{
+  background-color: #cceeed;
+  background-size: cover;
+  height: 100vh;
+  padding: 40px;
+}
+.table-header{
+  display: flex;
+  justify-content: space-between;
+  padding:20px;
+  background-color: white;
+  color: rgb(164, 211, 235);
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 20px;
+  text-decoration: underline;
+
+}
+.table-header h4 {
+  flex: 1;
+  text-align: left; /* Optional: center-align the text */
+  margin: 0; /* Optional: remove default margins */
+}
+
+.add-btn:hover{
+  font-size: 20px;
+  background-color: white;
+  color: #72cee5;
+  text-decoration: underline;
+}
