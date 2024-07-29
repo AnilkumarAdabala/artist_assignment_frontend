@@ -13,7 +13,7 @@ function App() {
   }
 
   const getAPi = async () =>{
-    const url = "https://artists-assignment-backend-theta.vercel.app/getTransactions"
+    const url = "https://artists-assignment-backend-ouh3.vercel.app/getTransactions"
      const response = await fetch(url)
      const data = await response.json()
      setTransaction(data)

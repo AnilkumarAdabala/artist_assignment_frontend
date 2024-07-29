@@ -7,24 +7,25 @@ const TransactionPage = (props) =>{
     const[description, setDescription] = useState("")
     
 
-    const onClickSaveBtn = async () => {
-        const url = "https://artists-assignment-backend-theta.vercel.app/addTransaction"
+    const onClickSaveBtn = async (e) => {
+        e.preventDefault();
+        const url = "https://artists-assignment-backend-ouh3.vercel.app/addTransaction"
         const data = {
             description: description,
             type: type,
-            amount: amount,
+            amount: parseInt(amount),
         }
         console.log(data)
         const response = await fetch(url, {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
                 },
             body: JSON.stringify(data)
             })
         console.log(response)
         
-        if (response.ok === 200){
+        if (response.status === 200){
             setClicked(false)
         }
         
